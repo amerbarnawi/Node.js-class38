@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HackYourWeather</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <form action="/weather" method="POST">
+        <input type="text" name="cityName" placeholder="City name" required />
+        <button type="submit">Submit<span>></span></button>
+      </form>
+
+      <p id="weather-message"><%= info %></p>
+    </div>
+  </body>
+</html>

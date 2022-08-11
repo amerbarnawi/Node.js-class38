@@ -1,0 +1,54 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+}
+#container {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 30px auto;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form,
+p {
+  margin: 20px auto;
+}
+
+form input {
+  width: 300px;
+  margin-bottom: 20px;
+  border: none;
+  border-bottom: solid darkorange 2px;
+  font-size: 22px;
+}
+
+form button {
+  width: 150px;
+  height: 45px;
+  margin: auto;
+  padding: 10px;
+  font-size: 20px;
+  background-color: darkorange;
+}
+
+form button:hover {
+  color: rgb(123, 235, 18);
+  background-color: black;
+}
+
+form button span {
+  margin-left: 20px;
+}
+
+p {
+  font-size: 18px;
+}
