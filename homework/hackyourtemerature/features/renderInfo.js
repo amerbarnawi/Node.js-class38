@@ -1,5 +1,5 @@
 import { getWeatherData } from "../fetchData/WeatherData.js";
-import { getCityTemperature } from "./cityTemperature.js";
+import { convertKelvinToCelsius } from "./cityTemperature.js";
 
 export function renderAppInterface(req, res) {
   res.status(200).render("index", {
@@ -16,7 +16,7 @@ export async function renderWeatherInfo(req, res) {
     res.status(404).render("index", { info: weatherData.weatherText });
   } else {
     // In case valid city name.
-    const cityTemperature = getCityTemperature(weatherData);
+    const cityTemperature = convertKelvinToCelsius(weatherData);
     res.status(200).render("index", {
       info: `The temperature in ${cityTemperature.cityName} is ${cityTemperature.temperature} °C.`,
     });

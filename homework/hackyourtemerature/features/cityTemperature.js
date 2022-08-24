@@ -1,5 +1,5 @@
 //To get the temperature by celsius.
-export function getCityTemperature(weatherData) {
+export function convertKelvinToCelsius(weatherData) {
   const kelvin = weatherData.main.temp;
   const celsius = (kelvin - 273.15).toFixed(2);
 
